@@ -13,7 +13,8 @@ public class YourSeleniumTest {
     @BeforeClass
     public void setUp() {
         // Setup Firefox driver
-        System.setProperty("webdriver.gecko.driver", "/path/to/geckodriver"); // Update with the path to your geckodriver
+        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+ // Update with the path to your geckodriver
         driver = new FirefoxDriver();
     }
 

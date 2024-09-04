@@ -1,32 +1,26 @@
-package com.example.jenkintest;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 public class YourSeleniumTest {
-
     private WebDriver driver;
 
-    @BeforeClass
+    @Before
     public void setUp() {
-        // Setup Firefox driver
+        // Set the path to the Geckodriver executable if it's not in the system PATH
         System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
- // Update with the path to your geckodriver
+
+        // Initialize the WebDriver
         driver = new FirefoxDriver();
     }
 
     @Test
     public void testExample() {
-        driver.get("https://example.com");
-        // Add your test code here
+        driver.get("http://www.example.com");
+        // Your test code here
     }
 
-    @AfterClass
+    @After
     public void tearDown() {
-        // Cleanup
         if (driver != null) {
             driver.quit();
         }

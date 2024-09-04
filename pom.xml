@@ -21,6 +21,14 @@
             <scope>test</scope>
         </dependency>
         <!-- Add other dependencies here -->
+             <dependencies>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.4.0</version>
+    </dependency>
+</dependencies>
+
     </dependencies>
 
     <build>

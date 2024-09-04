@@ -1,14 +1,14 @@
 package com.example.jenkintest;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class YourSeleniumTest {
     @Test
     public void testGoogleSearch() {
-        // Set up the WebDriver
-        WebDriver driver = new ChromeDriver();
+        // Set up the WebDriver for Firefox
+        WebDriver driver = new FirefoxDriver();
 
         // Navigate to Google
         driver.get("https://www.google.com");
